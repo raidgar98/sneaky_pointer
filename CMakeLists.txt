@@ -1,0 +1,1 @@
+add_library( sneaky_pointer sneaky_pointer.cpp )

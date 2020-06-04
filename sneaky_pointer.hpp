@@ -15,7 +15,7 @@ class sneaky_pointer
 public:
     
     sneaky_pointer() { set_pointer(nullptr); }
-    sneaky_pointer(const sneaky_pointer&) = delete;
+    sneaky_pointer(const sneaky_pointer& src) { set_pointer( src.get_pointer() ); }
     sneaky_pointer(sneaky_pointer&& src) { set_pointer(src.__pointer); src.__pointer = nullptr; }
 
     explicit sneaky_pointer(T * src) { set_pointer(src); }
