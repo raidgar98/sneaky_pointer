@@ -39,14 +39,14 @@ if "-e" in sys.argv or "--enumerate" in sys.argv:
 			_ = False
 		print(i,"\t",sufix(2**i, SI) if human or SI else 2**i)
 elif "-c" in sys.argv or "--calculate" in sys.argv:
-	print("***\nWarning: This result is theoritical\nIf you want to make sure, you should experiment and find of bits bits by yourself\n***");
+	print("***\nWarning: This result is theoritical\nIf you want to make sure, you should experiment and find of bits bits by yourself\n***")
 	for i in range(64):
 		if 2**i > mem:
 			result = 64 - (i + 1)	# + 1 to make extra safety 1-bit space
 			print("max bits: {}".format(result))
-			print("unsigned range: < 0 ; {} >".format((2**result) - 1))
+			print("unsigned range: < 0  {} >".format((2**result) - 1))
 			result -= 1
-			print("signed range: < {} ; {} >".format((-(2**result)) + 1, (2**result) - 1 ))
+			print("signed range: < {}  {} >".format((-(2**result)) + 1, (2**result) - 1 ))
 			break
 else:
 	print(mem)
