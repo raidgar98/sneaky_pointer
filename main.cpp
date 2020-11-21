@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "sneaky_pointer.hpp"
+#include <sneaky_pointer/sneaky_pointer.hpp>
 
 int main()
 {
