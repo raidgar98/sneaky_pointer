@@ -7,6 +7,7 @@
 #include <limits>
 #include <map>
 
+// This is not a smart pointer, you have to take care about memory managment!
 template <typename T, uint8_t empty_bits = 4>
 class sneaky_pointer
 {

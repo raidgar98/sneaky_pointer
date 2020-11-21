@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 project(sneaky_pointer CXX)
 
 add_library( sneaky_pointer src/sneaky_pointer.cpp )
-target_include_directories( sneaky_pointer PUBLIC include ) #/sneaky_pointer.hpp
+target_include_directories( sneaky_pointer PUBLIC include )
 
 # Example usage
 add_executable( sample_usage main.cpp )
